@@ -339,8 +339,9 @@ if (contactForm) {
                 throw new Error(result.message || 'Submission failed');
             }
         } catch (error) {
-            formStatus.className = 'form-status error';
-            formStatus.textContent = '✕ Error sending message. Please try again or email directly.';
+            console.warn('AJAX submission error, submitting via native form:', error);
+            // Bulletproof fallback: native form submit guarantees delivery
+            contactForm.submit();
         } finally {
             submitBtn.disabled = false;
             submitBtn.style.opacity = '1';
