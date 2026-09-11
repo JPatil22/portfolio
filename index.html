@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Patil — Full Stack Developer & AI Engineer</title>
+    <meta name="description"
+        content="Jay Patil is a full-stack developer & AI engineer specializing in SaaS, web apps, and automation. Available for freelance on Upwork & Fiverr.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Floating CTA -->
+    <a href="#contact" id="floating-cta" class="hidden">
+        <span class="pulse-dot-small"></span>
+        Hire Me
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="hidden" aria-label="Back to top">↑</button>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">JP<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#services" class="mob-link">Services</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#faq" class="mob-link">FAQ</a>
+        <a href="#contact" class="mob-link mob-cta">Hire Me →</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-mesh"></div>
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="pulse-dot-small"></span>
+                Available for Freelance
+            </div>
+            <h1 class="hero-name reveal">Jay<br><span class="gradient-text">Patil.</span></h1>
+            <p class="hero-role reveal">I build <span id="typewriter" class="typed-text"></span><span
+                    class="cursor-blink">|</span></p>
+            <p class="hero-sub reveal">Full Stack Developer & AI Engineer crafting high-performance web apps,<br>SaaS
+                platforms & intelligent automation tools.</p>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
+            </div>
+            <div class="hero-proof reveal">
+                <div class="proof-item">
+                    <span class="proof-num counter" data-target="10">0</span><span class="proof-num">+</span>
+                    <span class="proof-label">Projects Delivered</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-num counter" data-target="5">0</span><span class="proof-num">+</span>
+                    <span class="proof-label">Tech Domains</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-item">
+                    <span class="proof-num counter" data-target="100">0</span><span class="proof-num">%</span>
+                    <span class="proof-label">On-Time Delivery</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left reveal">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">I turn complex ideas<br>into <span class="gradient-text">working
+                            products.</span></h2>
+                    <p class="about-body">I'm a full-stack developer with hands-on experience shipping real-world
+                        applications — from AI-powered SaaS platforms and voice agents to complex business management
+                        systems. I work across the full stack, integrating modern frontends with robust backends and
+                        cutting-edge AI APIs.</p>
+                    <p class="about-body">Every project I take on is treated like a product — not just code. I focus on
+                        clean architecture, fast delivery, and results that actually matter to your business.</p>
+                    <div class="about-badges">
+                        <span class="badge">Fast Delivery</span>
+                        <span class="badge">NDA-Ready</span>
+                        <span class="badge">AI-Integrated</span>
+                        <span class="badge">Mobile-First</span>
+                        <span class="badge">Scalable Code</span>
+                        <span class="badge">Async-Friendly</span>
+                    </div>
+                </div>
+                <div class="about-right reveal">
+                    <div class="about-card-stack">
+                        <div class="stat-card glass">
+                            <div class="stat-icon-svg" style="--c:#7c3aed">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <path d="M8 21h8M12 17v4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value counter" data-target="10">0</div><span
+                                    class="stat-value">+</span>
+                                <div class="stat-desc">Production Apps Shipped</div>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-icon-svg" style="--c:#06b6d4">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v4l3 3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value">AI-First</div>
+                                <div class="stat-desc">OpenAI, LiveKit, LLM Integrations</div>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-icon-svg" style="--c:#10b981">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value">Full Stack</div>
+                                <div class="stat-desc">From DB schema to pixel-perfect UI</div>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-icon-svg" style="--c:#f59e0b">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="2" y1="12" x2="22" y2="12" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="stat-value">Remote-Ready</div>
+                                <div class="stat-desc">Async, timezone-flexible</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What I Offer</span>
+                <h2 class="section-title">Services built for <span class="gradient-text">real results.</span></h2>
+                <p class="section-sub">Not cookie-cutter solutions. Every engagement is custom-built for your specific
+                    business goal.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass reveal">
+                    <div class="service-icon-wrap" style="--clr: #7c3aed;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3>Web App Development</h3>
+                    <p>Full-stack web applications — from landing pages to complex SaaS dashboards. Production-quality,
+                        responsive, and scalable.</p>
+                    <ul class="service-list">
+                        <li>React / Next.js frontends</li>
+                        <li>REST & GraphQL APIs</li>
+                        <li>Authentication & payments</li>
+                        <li>Real-time features (WebSockets)</li>
+                    </ul>
+                </div>
+                <div class="service-card glass reveal featured-card">
+                    <div class="featured-pill">Most Requested</div>
+                    <div class="service-icon-wrap" style="--clr: #06b6d4;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="10" rx="2" />
+                            <circle cx="12" cy="5" r="2" />
+                            <path d="M12 7v4M8 11V9M16 11V9" />
+                            <circle cx="8" cy="16" r="1" fill="currentColor" />
+                            <circle cx="12" cy="16" r="1" fill="currentColor" />
+                            <circle cx="16" cy="16" r="1" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>AI / LLM Integration</h3>
+                    <p>Build intelligent products powered by OpenAI, voice AI, and custom automation pipelines — fully
+                        integrated into your app.</p>
+                    <ul class="service-list">
+                        <li>OpenAI / GPT API integration</li>
+                        <li>Voice agents (LiveKit + Realtime API)</li>
+                        <li>AI-powered analysis & reporting</li>
+                        <li>Custom automation pipelines</li>
+                    </ul>
+                </div>
+                <div class="service-card glass reveal">
+                    <div class="service-icon-wrap" style="--clr: #10b981;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <h3>Business Dashboards &amp; SaaS</h3>
+                    <p>Complete business management systems with analytics, user management, and subscription billing.
+                    </p>
+                    <ul class="service-list">
+                        <li>Admin panels & dashboards</li>
+                        <li>Data analytics & reports</li>
+                        <li>Multi-tenant SaaS architecture</li>
+                        <li>Supabase / PostgreSQL backends</li>
+                    </ul>
+                </div>
+                <div class="service-card glass reveal">
+                    <div class="service-icon-wrap" style="--clr: #f59e0b;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <h3>Automation &amp; Scripting</h3>
+                    <p>Custom Python scripts, scrapers, and automation tools that eliminate repetitive work and scale
+                        your workflow.</p>
+                    <ul class="service-list">
+                        <li>Web scraping & data pipelines</li>
+                        <li>Process automation</li>
+                        <li>API integrations & bots</li>
+                        <li>Video processing (FFmpeg)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW I WORK -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">How I Work</span>
+                <h2 class="section-title">A process that <span class="gradient-text">never misses.</span></h2>
+                <p class="section-sub">Clear communication and structured delivery — every single time.</p>
+            </div>
+            <div class="process-track">
+                <div class="process-line"></div>
+                <div class="process-step reveal">
+                    <div class="step-icon-wrap" style="--clr: #7c3aed;">
+                        <span>01</span>
+                    </div>
+                    <div class="step-content glass">
+                        <h3>Discovery &amp; Scoping</h3>
+                        <p>We kick off with a free 20-minute call to understand your goals, requirements, and
+                            constraints. I'll ask the right questions and deliver a detailed project scope with timeline
+                            and milestones before any work begins.</p>
+                        <div class="step-detail">
+                            <span>✓ Free call</span>
+                            <span>✓ Written scope doc</span>
+                            <span>✓ Timeline agreement</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-icon-wrap" style="--clr: #06b6d4;">
+                        <span>02</span>
+                    </div>
+                    <div class="step-content glass">
+                        <h3>Build Sprint</h3>
+                        <p>I build in focused sprints with daily/weekly updates so you're never in the dark. I share
+                            working demos early — not just at the end — so we can course-correct before it's too late.
+                        </p>
+                        <div class="step-detail">
+                            <span>✓ Regular updates</span>
+                            <span>✓ Early demos</span>
+                            <span>✓ Clean, documented code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-icon-wrap" style="--clr: #10b981;">
+                        <span>03</span>
+                    </div>
+                    <div class="step-content glass">
+                        <h3>Review &amp; Refinement</h3>
+                        <p>You get dedicated revision rounds to fine-tune the product. I handle feedback systematically
+                            — nothing slips through the cracks. We don't move to delivery until you're genuinely happy.
+                        </p>
+                        <div class="step-detail">
+                            <span>✓ Structured revisions</span>
+                            <span>✓ Bug-free delivery</span>
+                            <span>✓ Tested across devices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="step-icon-wrap" style="--clr: #f59e0b;">
+                        <span>04</span>
+                    </div>
+                    <div class="step-content glass">
+                        <h3>Launch &amp; Handoff</h3>
+                        <p>Full deployment support, documentation, and a walkthrough so you own your product completely.
+                            I don't disappear after delivery — post-launch support is included for 7 days.</p>
+                        <div class="step-detail">
+                            <span>✓ Deployment help</span>
+                            <span>✓ Full documentation</span>
+                            <span>✓ 7-day post-launch support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Featured Work</span>
+                <h2 class="section-title">Projects that <span class="gradient-text">ship & work.</span></h2>
+                <p class="section-sub">Every project below is a real, high-performance application built for impact.</p>
+            </div>
+            <div class="projects-list">
+
+                <!-- 01: PatchMySEO -->
+                <div class="project-item tilt-card reveal">
+                    <div class="project-meta">
+                        <span class="project-num">01</span>
+                        <span class="project-tag" style="--clr: #10b981;">AI Growth SaaS</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>PatchMySEO <span class="project-aka">/ SEO Nexus</span></h3>
+                        <p>An automated AI platform that scans any domain URL and generates audit-grade SEO intelligence reports in seconds. Uncovers hidden backlink opportunities, competitor keyword gaps, and produces shareable reports that help businesses dominate search rankings.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">Instant Domain &amp; Backlink Intelligence</div>
+                            <div class="highlight">AI-Powered Competitor Keyword Discovery</div>
+                            <div class="highlight">Shareable Instant Audit Reports for Clients</div>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">Node.js</span>
+                            <span class="tech-chip">Supabase</span>
+                            <span class="tech-chip">OpenAI API</span>
+                            <span class="tech-chip">Vercel</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://patchmyseo.com" target="_blank" rel="noopener" class="project-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live App (patchmyseo.com)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual" style="--g1: #064e3b; --g2: #10b981;">
+                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)"
+                            stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 02: Pingmebot -->
+                <div class="project-item tilt-card reveal alt">
+                    <div class="project-meta">
+                        <span class="project-num">02</span>
+                        <span class="project-tag" style="--clr: #8b5cf6;">AI Knowledge Assistant</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Pingmebot <span class="project-aka">/ Smart Document AI</span></h3>
+                        <p>Turns PDFs, company documents, and web links into an intelligent 24/7 AI chatbot. Businesses embed it directly on their website to answer customer questions instantly with pinpoint accuracy and custom branding.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">Turns Any Document Into an Instant AI Assistant</div>
+                            <div class="highlight">Custom Embeddable Website Chat Widget</div>
+                            <div class="highlight">Instant Sub-Second Customer Response Times</div>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">FastAPI</span>
+                            <span class="tech-chip">Vector Search</span>
+                            <span class="tech-chip">OpenAI API</span>
+                            <span class="tech-chip">React</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://pingme-bot.xyz" target="_blank" rel="noopener" class="project-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live App (pingme-bot.xyz)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual" style="--g1: #2e1065; --g2: #8b5cf6;">
+                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)"
+                            stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 03: Kirayah.xyz -->
+                <div class="project-item tilt-card reveal">
+                    <div class="project-meta">
+                        <span class="project-num">03</span>
+                        <span class="project-tag" style="--clr: #3b82f6;">PropTech Marketplace</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Kirayah.xyz <span class="project-aka">/ Real Estate Platform</span></h3>
+                        <p>A high-speed property rental marketplace connecting landlords directly with tenants. Features real-time property search filters, instant landlord inquiry messaging, and a seamless mobile experience.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">Instant Real-Time Property Search Filters</div>
+                            <div class="highlight">Direct Landlord Lead Messaging &amp; Inquiries</div>
+                            <div class="highlight">Blazing-Fast Mobile &amp; Desktop UI</div>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-chip">Next.js</span>
+                            <span class="tech-chip">TypeScript</span>
+                            <span class="tech-chip">Tailwind CSS</span>
+                            <span class="tech-chip">PostgreSQL</span>
+                            <span class="tech-chip">REST API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://kirayah.xyz" target="_blank" rel="noopener" class="project-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live App (kirayah.xyz)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual" style="--g1: #1e3a8a; --g2: #3b82f6;">
+                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)"
+                            stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 04: Country-Safe -->
+                <div class="project-item tilt-card reveal alt">
+                    <div class="project-meta">
+                        <span class="project-num">04</span>
+                        <span class="project-tag" style="--clr: #06b6d4;">AI Travel App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Country-Safe Travel Planner</h3>
+                        <p>An intelligent travel companion that gives travelers instant safety scores for any country and crafts custom, day-by-day vacation itineraries on the spot — running 100% fast in the browser.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">Instant Global Country Safety Scoring</div>
+                            <div class="highlight">AI-Customized Vacation Itineraries</div>
+                            <div class="highlight">Lightning Fast Zero-Delay Browser Engine</div>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-chip">Vanilla JS</span>
+                            <span class="tech-chip">HTML5 / CSS3</span>
+                            <span class="tech-chip">OpenAI API</span>
+                            <span class="tech-chip">Vercel</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://country-safe.vercel.app/" target="_blank" rel="noopener"
+                                class="project-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live App (country-safe.vercel.app)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual" style="--g1: #164e63; --g2: #06b6d4;">
+                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 05: Realtime AI Voice Agents -->
+                <div class="project-item tilt-card reveal">
+                    <div class="project-meta">
+                        <span class="project-num">05</span>
+                        <span class="project-tag" style="--clr: #f43f5e;">Conversational Voice AI</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Realtime Voice AI Systems</h3>
+                        <p>Human-like voice AI agents that handle live phone calls and web conversations with under 200ms delay. Built to automatically answer medical receptionist calls and qualify real estate leads 24/7.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">Sub-200ms Natural Human Voice Conversations</div>
+                            <div class="highlight">24/7 Automated Medical Triage &amp; Booking</div>
+                            <div class="highlight">Real Estate Phone Lead Qualification</div>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-chip">LiveKit WebRTC</span>
+                            <span class="tech-chip">OpenAI Realtime API</span>
+                            <span class="tech-chip">Python</span>
+                        </div>
+                    </div>
+                    <div class="project-visual" style="--g1: #4c0519; --g2: #f43f5e;">
+                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)"
+                            stroke-width="1.5">
+                            <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 06: BigPDF Privacy Suite -->
+                <div class="project-item tilt-card reveal alt">
+                    <div class="project-meta">
+                        <span class="project-num">06</span>
+                        <span class="project-tag" style="--clr: #10b981;">PDF & Document Tools</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>BigPDF Privacy & Conversion Suite</h3>
+                        <p>A sleek web app suite for editing, redacting, converting, and extracting text from PDFs. Processes everything 100% inside browser memory so sensitive client files are never uploaded to any server.</p>
+                        <div class="project-highlights">
+                            <div class="highlight">Instant Image-to-Text OCR Extraction</div>
+                            <div class="highlight">Private Document Redaction &amp; Unlocking</div>
+                            <div class="highlight">100% Private — Files Never Leave Browser</div>
+                        </div>
+                        <div class="project-tech-row">
+                            <span class="tech-chip">React 19</span>
+                            <span class="tech-chip">Tesseract OCR</span>
+                            <span class="tech-chip">PDF.js</span>
+                            <span class="tech-chip">PDF-Lib</span>
+                            <span class="tech-chip">Vercel</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://bigpdf.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live App (bigpdf.vercel.app)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual" style="--g1: #064e3b; --g2: #10b981;">
+                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)"
+                            stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 1-2 2v16a2 2 0 0 1 2 2h12a2 2 0 0 1 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TECH STACK -->
+    <section id="tech" class="section tech">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Tech Stack</span>
+                <h2 class="section-title">Tools I work with <span class="gradient-text">every day.</span></h2>
+            </div>
+            <div class="tech-categories reveal">
+                <div class="tech-cat glass">
+                    <h4>Frontend</h4>
+                    <div class="tech-items">
+                        <span>React</span><span>Next.js</span><span>TypeScript</span><span>HTML5 /
+                            CSS3</span><span>Vanilla JS</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="tech-cat glass">
+                    <h4>Backend & APIs</h4>
+                    <div class="tech-items">
+                        <span>Node.js</span><span>Express</span><span>Python</span><span>FastAPI</span><span>Django</span><span>REST
+                            APIs</span>
+                    </div>
+                </div>
+                <div class="tech-cat glass">
+                    <h4>AI & Automation</h4>
+                    <div class="tech-items">
+                        <span>OpenAI API</span><span>LiveKit (Voice AI)</span><span>RAG & Vector
+                            DBs</span><span>WebRTC</span><span>Chrome Extensions (MV3)</span>
+                    </div>
+                </div>
+                <div class="tech-cat glass">
+                    <h4>Cloud & Data Infra</h4>
+                    <div class="tech-items">
+                        <span>GCP (Cloud Functions,
+                            BigQuery)</span><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span><span>Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY HIRE ME -->
+    <section class="section why">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-left reveal">
+                    <span class="section-label">Why Work With Me</span>
+                    <h2 class="section-title">You get more than<br>just <span class="gradient-text">a developer.</span>
+                    </h2>
+                </div>
+                <div class="why-right">
+                    <div class="why-item reveal">
+                        <div class="why-num">01</div>
+                        <div>
+                            <h4>I think like a product owner</h4>
+                            <p>I don't just build what you describe — I ask the right questions, flag potential issues,
+                                and suggest better solutions when I see them.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">02</div>
+                        <div>
+                            <h4>Fast turnaround, no excuses</h4>
+                            <p>I've shipped complex AI-powered SaaS platforms in weeks. I work efficiently and
+                                communicate proactively on timelines.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">03</div>
+                        <div>
+                            <h4>NDA-ready & client-first</h4>
+                            <p>I've worked under NDA and understand the value of discretion. Your project details stay
+                                private — always.</p>
+                        </div>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-num">04</div>
+                        <div>
+                            <h4>Full ownership, zero handoff pain</h4>
+                            <p>Clean code, full documentation, and I walk you through everything so you're never left
+                                without control of your own product.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Questions you're <span class="gradient-text">probably thinking.</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Do you sign NDAs?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. I sign NDAs before work begins on any project — no hesitation. Your idea and
+                            business details are completely safe. I've worked under NDA on multiple projects and take
+                            confidentiality seriously.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>How many revisions do I get?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Based on your package (Starter: 2, Professional: 3, Enterprise: unlimited during build). That
+                            said, I work collaboratively throughout — showing you demos early means we rarely need major
+                            revisions at the end.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>How long will my project take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Timelines vary by complexity. Simple landing pages: 2–5 days. Full-stack apps: 1–4 weeks.
+                            Complex SaaS platforms: 4–8+ weeks. I always provide a realistic timeline in the scoping
+                            phase and stick to it. Rush delivery is available for an additional fee.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Do you work with international clients?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes — I work with clients worldwide. I'm async-friendly and available across timezones. We
+                            can schedule calls for overlap hours, and I keep all communication clear and documented via
+                            Upwork/Fiverr messages.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>What happens after project delivery?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I don't disappear. Every project includes post-delivery support (3–30 days depending on
+                            package) for bug fixes and small adjustments. I also provide full documentation and a
+                            walkthrough so you're 100% in control of your product.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Can I see the code / own it fully?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>100%. You own everything — all code, all assets, all intellectual property. I deliver via
+                            GitHub (private repo) with full transfer. No lock-in, no dependency on me to run your
+                            product.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <span>Do you offer ongoing maintenance?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I offer monthly retainer plans for ongoing maintenance, feature additions, and technical
+                            support. Many clients continue working with me after delivery. Message me to discuss rates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-inner reveal">
+                <span class="section-label">Let's Build Together</span>
+                <h2 class="section-title">Ready to start<br>your <span class="gradient-text">next project?</span></h2>
+                <p class="contact-sub">Send a direct message below to discuss your project requirements, scope, or
+                    timeline. I typically respond within 12 hours.</p>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrap glass">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your free Web3Forms Access Key from web3forms.com -->
+                        <input type="hidden" name="access_key" value="8d3d8e06-2241-4cba-8e5c-3f6e3bb4dd60">
+                        <input type="hidden" name="subject" value="New Project Inquiry from Portfolio Website">
+                        <input type="hidden" name="from_name" value="Jay Patil Portfolio">
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="e.g. Sarah Jenkins">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="name@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option value="Voice AI Infrastructure">Voice AI Infrastructure (LiveKit / WebRTC)
+                                    </option>
+                                    <option value="AI SaaS / RAG Chatbot">AI SaaS & RAG Chatbot (Custom Data)</option>
+                                    <option value="Full-Stack Next.js App">Full-Stack Next.js / Web Application</option>
+                                    <option value="PropTech & Marketplaces">PropTech & Real Estate Solutions</option>
+                                    <option value="Web Scraping & Automation">Web Scraping & Automated Pipelines
+                                    </option>
+                                    <option value="Other Custom Project">Other Custom Project</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Project Budget (USD)</label>
+                                <select id="budget" name="budget">
+                                    <option value="Not specified">Select budget range...</option>
+                                    <option value="$500 - $1,500">$500 – $1,500 (Small sprint / micro-tool)</option>
+                                    <option value="$1,500 - $3,500">$1,500 – $3,500 (Core MVP / SaaS feature)</option>
+                                    <option value="$3,500 - $7,500">$3,500 – $7,500 (Full-stack platform / Voice AI)
+                                    </option>
+                                    <option value="$7,500+">$7,500+ (Enterprise scope)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell me a bit about your project goals, spec, key features, or expected timeline..."></textarea>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" id="submit-btn" class="btn btn-primary form-submit-btn">
+                                <span>Send Message</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-divider">
+                    <span>or connect on platform</span>
+                </div>
+
+                <div class="contact-platforms">
+                    <a href="https://upwork.com" target="_blank" rel="noopener" class="platform-btn glass"
+                        id="upwork-btn">
+                        <span class="platform-icon-svg" style="--c:#14a800">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="platform-name">Upwork</div>
+                            <div class="platform-handle">View Upwork Profile →</div>
+                        </div>
+                    </a>
+                    <a href="https://fiverr.com" target="_blank" rel="noopener" class="platform-btn glass"
+                        id="fiverr-btn">
+                        <span class="platform-icon-svg" style="--c:#1dbf73">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="platform-name">Fiverr</div>
+                            <div class="platform-handle">Browse Gigs →</div>
+                        </div>
+                    </a>
+                    <a href="mailto:contact@jaypatil.dev" class="platform-btn glass" id="email-btn">
+                        <span class="platform-icon-svg" style="--c:#7c3aed">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="platform-name">Direct Email</div>
+                            <div class="platform-handle">Send Email →</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span>
+                    Currently accepting new projects · 2 sprint slots remaining
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-name">Jay Patil<span class="dot">.</span></span>
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link"
+                        aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                </div>
+                <span class="footer-copy">© 2026 · Jay Patil</span>
+                <div class="footer-links">
+                    <a href="#home">Top</a>
+                    <a href="#projects">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
