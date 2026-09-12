@@ -64,7 +64,7 @@ Whether you need a quick bug fix, an API integration, or a complete 0-to-1 SaaS 
 - CountrySafe (countrysafe.vercel.app) — AI travel safety planner
 - BigPDF Suite (bigpdf.vercel.app) — In-browser privacy OCR suite
 
-Live Portfolio: https://jpatil22.github.io/portfolio/
+Live Portfolio: https://jaypatil.online
 
 Feel free to select a package or message me directly with your project spec!
 ```

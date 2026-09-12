@@ -1,6 +1,6 @@
 # Jay Patil
 **Full Stack Developer & AI Systems Engineer — 0-to-1 SaaS MVPs & Sub-200ms Voice AI**  
-📍 Remote | ✉️ contact@jaypatil.dev | 🌐 [jpatil22.github.io/portfolio](https://jpatil22.github.io/portfolio/) | 💻 [github.com/JPatil22](https://github.com/JPatil22)
+📍 Remote | ✉️ contact@jaypatil.dev | 🌐 [jaypatil.online](https://jaypatil.online) | 💻 [github.com/JPatil22](https://github.com/JPatil22)
 
 ---
 
