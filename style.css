@@ -914,18 +914,22 @@ a {
 .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
 }
 
 .project-item {
     display: grid;
-    grid-template-columns: 80px 1fr 360px;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas:
+        "meta body"
+        "frame frame";
     gap: 32px;
-    align-items: center;
-    padding: 36px;
-    border-radius: 20px;
+    align-items: start;
+    padding: 44px;
+    border-radius: 24px;
     border: 1px solid var(--border);
-    background: var(--surface);
+    background: #ffffff;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.04);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -956,6 +960,7 @@ a {
 }
 
 .project-meta {
+    grid-area: meta;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -983,6 +988,7 @@ a {
 }
 
 .project-body {
+    grid-area: body;
     flex: 1;
 }
 
@@ -1054,47 +1060,49 @@ a {
 }
 
 /* ============================================
-   HOSTED PROJECT BROWSER PREVIEW FRAME
+   HOSTED PROJECT BROWSER PREVIEW FRAME (SPACIOUS FULL-WIDTH)
 ============================================ */
 .project-browser-frame {
-    width: 360px;
-    height: 230px;
-    border-radius: 12px;
+    grid-area: frame;
+    width: 100%;
+    height: 420px;
+    border-radius: 16px;
     border: 1px solid rgba(203, 213, 225, 0.85);
     background: #ffffff;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     transition: all 0.4s ease;
     position: relative;
+    margin-top: 8px;
 }
 
 .project-item:hover .project-browser-frame {
     transform: translateY(-4px);
-    box-shadow: 0 20px 45px rgba(79, 70, 229, 0.15), 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 25px 60px rgba(79, 70, 229, 0.16), 0 4px 15px rgba(0, 0, 0, 0.04);
     border-color: rgba(79, 70, 229, 0.35);
 }
 
 .browser-header {
-    height: 30px;
+    height: 36px;
     background: #f1f5f9;
     border-bottom: 1px solid #e2e8f0;
     display: flex;
     align-items: center;
-    padding: 0 10px;
-    gap: 8px;
+    padding: 0 14px;
+    gap: 10px;
     flex-shrink: 0;
 }
 
 .browser-dots {
     display: flex;
-    gap: 5px;
+    gap: 6px;
 }
 
 .browser-dots .dot {
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
 }
 .browser-dots .dot.red { background: #ef4444; }
@@ -1105,15 +1113,15 @@ a {
     flex: 1;
     background: #ffffff;
     border: 1px solid #cbd5e1;
-    border-radius: 5px;
-    height: 18px;
+    border-radius: 6px;
+    height: 22px;
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    padding: 0 12px;
     font-family: var(--mono);
-    font-size: 0.65rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
-    gap: 5px;
+    gap: 6px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1123,18 +1131,17 @@ a {
     flex: 1;
     position: relative;
     width: 100%;
-    height: calc(100% - 30px);
+    height: calc(100% - 36px);
     background: #f8fafc;
     overflow: hidden;
 }
 
 .browser-body iframe {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
     border: none;
     pointer-events: none;
-    transform: scale(0.833);
-    transform-origin: top left;
+    transform: scale(1);
     background: #ffffff;
 }
 
@@ -1801,8 +1808,16 @@ a {
 
     .project-item {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "meta"
+            "body"
+            "frame";
         gap: 20px;
         padding: 28px 24px;
+    }
+
+    .project-browser-frame {
+        height: 280px;
     }
 
     .project-meta {
